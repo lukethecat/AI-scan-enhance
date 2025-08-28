@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2B3C4D5E6F7890ABCD1234 /* AIScanEnhanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1235 /* AIScanEnhanceApp.swift */; };
+		1A2B3C4D5E6F7890ABCD1236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1237 /* ContentView.swift */; };
+		1A2B3C4D5E6F7890ABCD1263 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1264 /* PrivacyInfo.xcprivacy */; };
+		1A2B3C4D5E6F7890ABCD1238 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */; };
+		1A2B3C4D5E6F7890ABCD123A /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */; };
+		1A2B3C4D5E6F7890ABCD123C /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */; };
+		1A2B3C4D5E6F7890ABCD123E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */; };
+
+		1A2B3C4D5E6F7890ABCD1261 /* SwiftDocumentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */; };
+		1A2B3C4D5E6F7890ABCD1259 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */; };
+		1A2B3C4D5E6F7890ABCD125B /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */; };
+		1A2B3C4D5E6F7890ABCD125D /* CurrentProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */; };
+		1A2B3C4D5E6F7890ABCD125F /* RefinementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */; };
+		1A2B3C4D5E6F7890ABCD1242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1243 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A2B3C4D5E6F7890ABCD1244 /* AIScanEnhance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIScanEnhance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2B3C4D5E6F7890ABCD1235 /* AIScanEnhanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIScanEnhanceApp.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1264 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1237 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+
+		1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocumentProcessor.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProcessingView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefinementView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1243 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1245 /* AIScanEnhance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIScanEnhance.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2B3C4D5E6F7890ABCD1246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2B3C4D5E6F7890ABCD1247 = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD1248 /* AIScanEnhance */,
+				1A2B3C4D5E6F7890ABCD1249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD1248 /* AIScanEnhance */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD124A /* App */,
+				1A2B3C4D5E6F7890ABCD124B /* Views */,
+				1A2B3C4D5E6F7890ABCD124C /* Models */,
+				1A2B3C4D5E6F7890ABCD124D /* Utils */,
+				1A2B3C4D5E6F7890ABCD124E /* Preview Content */,
+				1A2B3C4D5E6F7890ABCD1245 /* AIScanEnhance.entitlements */,
+				1A2B3C4D5E6F7890ABCD1264 /* PrivacyInfo.xcprivacy */,
+			);
+			path = AIScanEnhance;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD124A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD1235 /* AIScanEnhanceApp.swift */,
+				1A2B3C4D5E6F7890ABCD1237 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD124B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */,
+				1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */,
+				1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */,
+				1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */,
+				1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */,
+				1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD124C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */,
+				1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD124D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+
+				1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD124E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD1243 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A2B3C4D5E6F7890ABCD1249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C4D5E6F7890ABCD1244 /* AIScanEnhance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A2B3C4D5E6F7890ABCD124F /* AIScanEnhance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2B3C4D5E6F7890ABCD1250 /* Build configuration list for PBXNativeTarget "AIScanEnhance" */;
+			buildPhases = (
+				1A2B3C4D5E6F7890ABCD1251 /* Sources */,
+				1A2B3C4D5E6F7890ABCD1246 /* Frameworks */,
+				1A2B3C4D5E6F7890ABCD1252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIScanEnhance;
+			productName = AIScanEnhance;
+			productReference = 1A2B3C4D5E6F7890ABCD1244 /* AIScanEnhance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A2B3C4D5E6F7890ABCD1253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1A2B3C4D5E6F7890ABCD124F = {
+						CreatedOnToolsVersion = 15.0;
+						EnableHardening = YES;
+					};
+				};
+			};
+			buildConfigurationList = 1A2B3C4D5E6F7890ABCD1254 /* Build configuration list for PBXProject "AIScanEnhance" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A2B3C4D5E6F7890ABCD1247;
+			productRefGroup = 1A2B3C4D5E6F7890ABCD1249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2B3C4D5E6F7890ABCD124F /* AIScanEnhance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A2B3C4D5E6F7890ABCD1252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2B3C4D5E6F7890ABCD1242 /* Preview Assets.xcassets in Resources */,
+				1A2B3C4D5E6F7890ABCD1263 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A2B3C4D5E6F7890ABCD1251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+					1A2B3C4D5E6F7890ABCD1236 /* ContentView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1234 /* AIScanEnhanceApp.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1238 /* DropZoneView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD123A /* ImagePreviewView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD123C /* CalibrationView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD123E /* ImageProcessor.swift in Sources */,
+
+				1A2B3C4D5E6F7890ABCD1261 /* SwiftDocumentProcessor.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1259 /* QueueManager.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD125B /* QueueView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD125D /* CurrentProcessingView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD125F /* RefinementView.swift in Sources */,
+				);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A2B3C4D5E6F7890ABCD1255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASYNC_COMPILATION_ENABLED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A2B3C4D5E6F7890ABCD1256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASYNC_COMPILATION_ENABLED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1A2B3C4D5E6F7890ABCD1257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIScanEnhance/AIScanEnhance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIScanEnhance/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Scan Enhance";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiscanenhance.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A2B3C4D5E6F7890ABCD1258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIScanEnhance/AIScanEnhance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIScanEnhance/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Scan Enhance";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiscanenhance.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A2B3C4D5E6F7890ABCD1254 /* Build configuration list for PBXProject "AIScanEnhance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3C4D5E6F7890ABCD1255 /* Debug */,
+				1A2B3C4D5E6F7890ABCD1256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2B3C4D5E6F7890ABCD1250 /* Build configuration list for PBXNativeTarget "AIScanEnhance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3C4D5E6F7890ABCD1257 /* Debug */,
+				1A2B3C4D5E6F7890ABCD1258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A2B3C4D5E6F7890ABCD1253 /* Project object */;
+}
