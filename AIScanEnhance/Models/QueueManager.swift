@@ -118,22 +118,30 @@ class QueueManager: ObservableObject {
     
     private func processItem(_ item: QueueItem) async {
         do {
+            print("[QueueManager] 开始处理图片: \(item.fileName)")
+            
             // 更新进度
             updateItemProgress(item.id, progress: 0.2)
             
-            // 检测角点
-            let corners = try await documentProcessor.detectDocumentCorners(from: item.originalURL)
-            updateItemProgress(item.id, progress: 0.5)
-            
-            // 处理图片
+            // 直接使用processDocument方法，它会自动检测角点并处理
             let processedImageData = try await documentProcessor.processDocument(imageURL: item.originalURL)
             updateItemProgress(item.id, progress: 0.8)
+            
+            // 单独检测角点用于显示
+            let corners = try await documentProcessor.detectDocumentCorners(from: item.originalURL)
             
             DispatchQueue.main.async {
                 if let index = self.queueItems.firstIndex(where: { $0.id == item.id }) {
                     self.queueItems[index].detectedCorners = corners
-                    self.queueItems[index].processedImage = NSImage(data: processedImageData)
-                    self.queueItems[index].status = .completed
+                    if let processedImage = NSImage(data: processedImageData) {
+                        self.queueItems[index].processedImage = processedImage
+                        self.queueItems[index].status = .completed
+                        print("[QueueManager] ✅ 图片处理完成: \(item.fileName)")
+                    } else {
+                        print("[QueueManager] ❌ 无法创建NSImage: \(item.fileName)")
+                        self.queueItems[index].status = .failed
+                        self.queueItems[index].errorMessage = "无法创建处理后的图像"
+                    }
                     self.queueItems[index].processingProgress = 1.0
                 }
                 
@@ -142,6 +150,7 @@ class QueueManager: ObservableObject {
             }
             
         } catch {
+            print("[QueueManager] ❌ 处理失败: \(item.fileName), 错误: \(error.localizedDescription)")
             DispatchQueue.main.async {
                 self.updateItemStatus(item.id, status: .failed, errorMessage: error.localizedDescription)
                 self.processNextItem()

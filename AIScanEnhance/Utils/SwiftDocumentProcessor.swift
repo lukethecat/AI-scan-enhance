@@ -16,18 +16,40 @@ class SwiftDocumentProcessor: ObservableObject {
     
     // MARK: - 主要处理方法
     
-    /// 检测文档边缘角点
+    /// 检测文档角点
     func detectDocumentCorners(from imageURL: URL) async throws -> [CGPoint] {
-        print("[SwiftDocumentProcessor] ========== 开始文档角点检测 ==========")
+        print("[SwiftDocumentProcessor] ========== 开始角点检测 ==========")
         print("[SwiftDocumentProcessor] 输入图片路径: \(imageURL.path)")
         
-        // 加载图像
-        guard let image = CIImage(contentsOf: imageURL) else {
+        // 检查文件是否存在
+        guard FileManager.default.fileExists(atPath: imageURL.path) else {
+            print("[SwiftDocumentProcessor] ❌ 文件不存在: \(imageURL.path)")
+            throw DocumentProcessorError.imageLoadFailed
+        }
+        
+        // 尝试多种方式加载图像
+        var image: CIImage?
+        
+        // 方法1: 直接从URL加载
+        image = CIImage(contentsOf: imageURL)
+        
+        // 方法2: 如果失败，尝试通过Data加载
+        if image == nil {
+            do {
+                let imageData = try Data(contentsOf: imageURL)
+                image = CIImage(data: imageData)
+                print("[SwiftDocumentProcessor] ✅ 通过Data成功加载图像")
+            } catch {
+                print("[SwiftDocumentProcessor] ❌ 通过Data加载失败: \(error)")
+            }
+        }
+        
+        guard let validImage = image else {
             print("[SwiftDocumentProcessor] ❌ 无法加载图像")
             throw DocumentProcessorError.imageLoadFailed
         }
         
-        print("[SwiftDocumentProcessor] ✅ 图像加载成功，尺寸: \(image.extent.size)")
+        print("[SwiftDocumentProcessor] ✅ 图像加载成功，尺寸: \(validImage.extent.size)")
         
         return try await withCheckedThrowingContinuation { continuation in
             // 创建 Vision 请求
@@ -50,7 +72,7 @@ class SwiftDocumentProcessor: ObservableObject {
                 if observations.isEmpty {
                     print("[SwiftDocumentProcessor] ⚠️ Vision检测失败，尝试备用边缘检测")
                     do {
-                        let fallbackCorners = try self.fallbackEdgeDetection(image: image)
+                        let fallbackCorners = try self.fallbackEdgeDetection(image: validImage)
                         continuation.resume(returning: fallbackCorners)
                         return
                     } catch {
@@ -70,7 +92,7 @@ class SwiftDocumentProcessor: ObservableObject {
                 print("[SwiftDocumentProcessor] ✅ 最佳矩形置信度: \(bestRectangle.confidence)")
                 
                 // 转换坐标系（Vision 使用归一化坐标，原点在左下角）
-                let imageSize = image.extent.size
+                let imageSize = validImage.extent.size
                 let corners = [
                     CGPoint(x: bestRectangle.topLeft.x * imageSize.width, 
                            y: (1 - bestRectangle.topLeft.y) * imageSize.height),
@@ -99,7 +121,7 @@ class SwiftDocumentProcessor: ObservableObject {
             request.minimumConfidence = 0.1  // 降低最小置信度要求
             
             // 执行检测
-            let handler = VNImageRequestHandler(ciImage: image, options: [:])
+            let handler = VNImageRequestHandler(ciImage: validImage, options: [:])
             do {
                 try handler.perform([request])
             } catch {

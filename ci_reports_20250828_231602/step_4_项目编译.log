@@ -1,0 +1,461 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj" -scheme AIScanEnhance -configuration Debug build
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:00006000-001240363E91801E, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00006000-001240363E91801E, name:My Mac }
+{ platform:macOS, name:Any Mac }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'AIScanEnhance' in project 'AIScanEnhance' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: e2db1f667377a01e0655ac16c9864bc5
+Build description path: /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/XCBuildData/e2db1f667377a01e0655ac16c9864bc5.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache
+
+CreateBuildDirectory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    builtin-create-build-directory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products
+
+CreateBuildDirectory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    builtin-create-build-directory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    builtin-create-build-directory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+
+CreateBuildDirectory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    builtin-create-build-directory /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance-d44d3aff9e9f5810c4a40878ae495658-VFS/all-product-headers.yaml
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance.xcodeproj
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance-d44d3aff9e9f5810c4a40878ae495658-VFS/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/empty-AIScanEnhance.plist (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/empty-AIScanEnhance.plist
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-OutputFileMap.json (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/Entitlements.plist (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/Entitlements.plist
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_const_extract_protocols.json (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftConstValuesFileList (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.LinkFileList (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.LinkFileList
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyStaticMetadataFileList (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyMetadataFileList (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-project-headers.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-project-headers.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-own-target-headers.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-generated-files.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-generated-files.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-target-headers.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-non-framework-target-headers.hmap (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibPath-normal-arm64.txt (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibInstallName-normal-arm64.txt (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    write-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app
+
+ValidateDevelopmentAssets /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-validate-development-assets --validate YES_ERROR /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content
+
+ProcessProductPackaging /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/AIScanEnhance.entitlements /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+    Entitlements:
+    
+    {
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.downloads.read-write" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.get-task-allow" = 1;
+    "com.apple.security.network.client" = 1;
+}
+    
+    builtin-productPackagingUtility /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance/AIScanEnhance.entitlements -entitlements -format xml -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent
+
+ProcessProductPackagingDER /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent.der (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /usr/bin/derq query -f xml -i /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent.der --raw
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/thinned (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/thinned
+
+Ld /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/__preview.dylib normal (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -O0 -L/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -install_name @rpath/AIScanEnhance.debug.dylib -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_dependency_info.dat -Xlinker -no_adhoc_codesign -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/__preview.dylib
+
+CopyPlistFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources/PrivacyInfo.xcprivacy /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/PrivacyInfo.xcprivacy (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-copyPlist --outdir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources -- /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance/PrivacyInfo.xcprivacy
+
+GenerateAssetSymbols /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content/Preview\ Assets.xcassets (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content/Preview\ Assets.xcassets --compile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources --output-format human-readable-text --notices --warnings --export-dependency-info /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_dependencies --output-partial-info-plist /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --enable-on-demand-resources NO --development-region en --target-device mac --minimum-deployment-target 13.0 --platform macosx --bundle-identifier com.aiscanenhance.app --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+MkDir /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/unthinned (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /bin/mkdir -p /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/unthinned
+
+CompileAssetCatalogVariant thinned /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content/Preview\ Assets.xcassets (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content/Preview\ Assets.xcassets --compile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --enable-on-demand-resources NO --development-region en --target-device mac --minimum-deployment-target 13.0 --platform macosx
+2025-08-28 23:16:08.454 ibtoold[28551:13667855] NSFileCoordinator is doing nothing.
+/* com.apple.actool.compilation-results */
+/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist_thinned
+/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver AIScanEnhance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AIScanEnhance -Onone -enforce-exclusivity\=checked @/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -target arm64-apple-macos13.0 -g -module-cache-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Index.noindex/DataStore -swift-version 5 -I /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache -output-file-map /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_const_extract_protocols.json -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-generated-files.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-own-target-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-target-headers.hmap -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-project-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/include -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources-normal/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-Swift.h -working-directory /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ DropZoneView.swift,\ ImagePreviewView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/DropZoneView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/ImagePreviewView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/DropZoneView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/ImagePreviewView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ ImageProcessor.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:57:19: warning: immutable value 'image' was never used; consider replacing with '_' or removing it
+        guard let image = currentImage,
+              ~~~~^~~~~
+              _
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:77:17: warning: capture of 'self' with non-sendable type 'ImageProcessor' in a '@Sendable' closure
+                self.processedImage = NSImage(data: processedImageData)
+                ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:14:7: note: class 'ImageProcessor' does not conform to the 'Sendable' protocol
+class ImageProcessor: ObservableObject {
+      ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:88:19: warning: immutable value 'image' was never used; consider replacing with '_' or removing it
+        guard let image = currentImage,
+              ~~~~^~~~~
+              _
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:111:17: warning: capture of 'self' with non-sendable type 'ImageProcessor' in a '@Sendable' closure
+                self.processedImage = NSImage(data: processedImageData)
+                ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/ImageProcessor.swift:14:7: note: class 'ImageProcessor' does not conform to the 'Sendable' protocol
+class ImageProcessor: ObservableObject {
+      ^
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift,\ AIScanEnhanceApp.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/App/ContentView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/App/AIScanEnhanceApp.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/App/ContentView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/App/AIScanEnhanceApp.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ QueueManager.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:134:32: warning: capture of 'self' with non-sendable type 'QueueManager' in a '@Sendable' closure
+                if let index = self.queueItems.firstIndex(where: { $0.id == item.id }) {
+                               ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:41:7: note: class 'QueueManager' does not conform to the 'Sendable' protocol
+class QueueManager: ObservableObject {
+      ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:134:77: warning: capture of 'item' with non-sendable type 'QueueItem' in a '@Sendable' closure
+                if let index = self.queueItems.firstIndex(where: { $0.id == item.id }) {
+                                                                            ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:23:8: note: consider making struct 'QueueItem' conform to the 'Sendable' protocol
+struct QueueItem: Identifiable {
+       ^
+                              , Sendable
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:155:17: warning: capture of 'self' with non-sendable type 'QueueManager' in a '@Sendable' closure
+                self.updateItemStatus(item.id, status: .failed, errorMessage: error.localizedDescription)
+                ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:41:7: note: class 'QueueManager' does not conform to the 'Sendable' protocol
+class QueueManager: ObservableObject {
+      ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:155:39: warning: capture of 'item' with non-sendable type 'QueueItem' in a '@Sendable' closure
+                self.updateItemStatus(item.id, status: .failed, errorMessage: error.localizedDescription)
+                                      ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:23:8: note: consider making struct 'QueueItem' conform to the 'Sendable' protocol
+struct QueueItem: Identifiable {
+       ^
+                              , Sendable
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:191:32: warning: capture of 'self' with non-sendable type 'QueueManager' in a '@Sendable' closure
+                if let index = self.queueItems.firstIndex(where: { $0.id == item.id }) {
+                               ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:41:7: note: class 'QueueManager' does not conform to the 'Sendable' protocol
+class QueueManager: ObservableObject {
+      ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:191:77: warning: capture of 'item' with non-sendable type 'QueueItem' in a '@Sendable' closure
+                if let index = self.queueItems.firstIndex(where: { $0.id == item.id }) {
+                                                                            ^
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Models/QueueManager.swift:23:8: note: consider making struct 'QueueItem' conform to the 'Sendable' protocol
+struct QueueItem: Identifiable {
+       ^
+                              , Sendable
+
+SwiftCompile normal arm64 Compiling\ CalibrationView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/CalibrationView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/CalibrationView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ AIScanEnhance (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+EmitSwiftModule normal arm64 (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ RefinementView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/RefinementView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/RefinementView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ CurrentProcessingView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/CurrentProcessingView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/CurrentProcessingView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftCompile normal arm64 Compiling\ SwiftDocumentProcessor.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Utils/SwiftDocumentProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Utils/SwiftDocumentProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+/Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Utils/SwiftDocumentProcessor.swift:226:19: warning: value 'edgeImage' was defined but never used; consider replacing with boolean test
+        guard let edgeImage = edgeFilter.outputImage else {
+              ~~~~^~~~~~~~~~~~
+                                                     != nil
+
+LinkAssetCatalog /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Preview\ Content/Preview\ Assets.xcassets (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-linkAssetCatalog --thinned /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/thinned --thinned-dependencies /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist_unthinned --output /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources --plist-output /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources/Assets.car (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for AIScanEnhance (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriver\ Compilation\ Requirements AIScanEnhance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AIScanEnhance -Onone -enforce-exclusivity\=checked @/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -target arm64-apple-macos13.0 -g -module-cache-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Index.noindex/DataStore -swift-version 5 -I /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache -output-file-map /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_const_extract_protocols.json -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-generated-files.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-own-target-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-target-headers.hmap -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-project-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/include -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources-normal/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-Swift.h -working-directory /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Info.plist /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/empty-AIScanEnhance.plist (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-infoPlistUtility /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/empty-AIScanEnhance.plist -producttype com.apple.product-type.application -genpkginfo /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/assetcatalog_generated_info.plist -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Info.plist
+
+SwiftMergeGeneratedHeaders /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/AIScanEnhance-Swift.h /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-Swift.h (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-swiftHeaderTool -arch arm64 /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-Swift.h -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/AIScanEnhance-Swift.h
+
+Copy /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.swiftmodule /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.swiftdoc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftdoc (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftdoc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.abi.json /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.abi.json (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.abi.json /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftsourceinfo (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftsourceinfo /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ QueueView.swift /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/QueueView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftCompile normal arm64 /Users/jellyfishjaco/Documents/Git|Repo/AI-scan-enhance/AIScanEnhance/Views/QueueView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling DropZoneView.swift, ImagePreviewView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift, AIScanEnhanceApp.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CalibrationView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RefinementView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CurrentProcessingView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling QueueView.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SwiftDocumentProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ImageProcessor.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriverJobDiscovery normal arm64 Compiling QueueManager.swift (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+SwiftDriver\ Compilation AIScanEnhance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AIScanEnhance -Onone -enforce-exclusivity\=checked @/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -target arm64-apple-macos13.0 -g -module-cache-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Index.noindex/DataStore -swift-version 5 -I /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx15.5-24F74-8254517eb8b97d462ccbc072ba9094c9.sdkstatcache -output-file-map /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_const_extract_protocols.json -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-generated-files.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-own-target-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-all-target-headers.hmap -Xcc -iquote -Xcc /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-project-headers.hmap -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/include -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources-normal/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources/arm64 -Xcc -I/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance-Swift.h -working-directory /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib normal (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -O0 -L/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -filelist /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.LinkFileList -install_name @rpath/AIScanEnhance.debug.dylib -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-ExecutorLinkFileList-normal-arm64.txt (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    construct-stub-executor-link-file-list /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'AIScanEnhance' from project 'AIScanEnhance')
+
+Ld /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance normal (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos13.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -O0 -L/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -F/Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance-ExecutorLinkFileList-normal-arm64.txt /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib -Xlinker -no_adhoc_codesign -o /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance
+
+CopySwiftLibs /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib --scan-folder /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Frameworks --scan-folder /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/PlugIns --scan-folder /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Library/SystemExtensions --scan-folder /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name AIScanEnhance --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk --xcode-version 16F6 --platform-family macOS --deployment-target 13.0 --bundle-identifier com.aiscanenhance.app --output /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/Resources --target-triple arm64-apple-macos13.0 --binary-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance --dependency-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance_dependency_info.dat --stringsdata-file /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftFileList --metadata-file-list /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyMetadataFileList --static-metadata-file-list /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.DependencyStaticMetadataFileList --swift-const-vals-list /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/Objects-normal/arm64/AIScanEnhance.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2025-08-28 23:16:18.383 appintentsmetadataprocessor[28813:13669026] Starting appintentsmetadataprocessor export
+2025-08-28 23:16:18.385 appintentsmetadataprocessor[28813:13669026] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CodeSign /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/AIScanEnhance.debug.dylib
+
+CodeSign /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/__preview.dylib (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app/Contents/MacOS/__preview.dylib
+
+CodeSign /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --entitlements /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Intermediates.noindex/AIScanEnhance.build/Debug/AIScanEnhance.build/AIScanEnhance.app.xcent --timestamp\=none --generate-entitlement-der /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app
+
+RegisterExecutionPolicyException /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-RegisterExecutionPolicyException /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app
+
+Validate /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    builtin-validationUtility /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app -no-validate-extension -infoplist-subpath Contents/Info.plist
+
+Touch /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /usr/bin/touch -c /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app
+
+RegisterWithLaunchServices /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app (in target 'AIScanEnhance' from project 'AIScanEnhance')
+    cd /Users/jellyfishjaco/Documents/Git\|Repo/AI-scan-enhance
+    /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister -f -R -trusted /Users/jellyfishjaco/Library/Developer/Xcode/DerivedData/AIScanEnhance-aulwowtcztyiqxdmsxxiylwihljk/Build/Products/Debug/AIScanEnhance.app
+
+note: Disabling hardened runtime with ad-hoc codesigning. (in target 'AIScanEnhance' from project 'AIScanEnhance')
+** BUILD SUCCEEDED **
+
