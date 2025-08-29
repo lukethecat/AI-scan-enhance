@@ -9,6 +9,7 @@ import Foundation
 import CoreSpotlight
 import UniformTypeIdentifiers
 import AppKit
+import SwiftUI
 
 class SpotlightIndexer {
     static let shared = SpotlightIndexer()

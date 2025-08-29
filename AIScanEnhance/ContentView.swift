@@ -8,6 +8,9 @@
 import SwiftUI
 import UniformTypeIdentifiers
 import Foundation
+import Vision
+import CoreImage
+import PDFKit
 
 struct ContentView: View {
     @EnvironmentObject var documentProcessor: DocumentProcessor
@@ -213,12 +216,17 @@ struct QuickPreviewView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 } else {
-                    AsyncImage(url: document.originalURL) { image in
-                        image
+                    if let nsImage = NSImage(contentsOf: document.originalURL) {
+                        Image(nsImage: nsImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                    } placeholder: {
-                        ProgressView()
+                    } else {
+                        Rectangle()
+                            .fill(.quaternary)
+                            .overlay {
+                                Image(systemName: "photo")
+                                    .foregroundStyle(.secondary)
+                            }
                     }
                 }
             }
@@ -262,17 +270,19 @@ struct DocumentRowView: View {
     var body: some View {
         HStack(spacing: 12) {
             // 缩略图
-            AsyncImage(url: document.originalURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                Rectangle()
-                    .fill(.quaternary)
-                    .overlay {
-                        Image(systemName: "photo")
-                            .foregroundStyle(.secondary)
-                    }
+            Group {
+                if let nsImage = NSImage(contentsOf: document.originalURL) {
+                    Image(nsImage: nsImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } else {
+                    Rectangle()
+                        .fill(.quaternary)
+                        .overlay {
+                            Image(systemName: "photo")
+                                .foregroundStyle(.secondary)
+                        }
+                }
             }
             .frame(width: 60, height: 80)
             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -368,6 +378,7 @@ struct StatusBadge: View {
         case .completed: return .green
         case .failed: return .red
         case .reviewing: return .purple
+        case .cancelled: return .gray
         }
     }
     
@@ -378,6 +389,7 @@ struct StatusBadge: View {
         case .completed: return "已完成"
         case .failed: return "失败"
         case .reviewing: return "审核中"
+        case .cancelled: return "已取消"
         }
     }
 }
@@ -458,35 +470,10 @@ struct DocumentComparisonView: View {
             // 图像显示区域
             GeometryReader { geometry in
                 ScrollView([.horizontal, .vertical]) {
-                    Group {
-                        if document.processingStatus == .completed {
-                            if showingOriginal {
-                                AsyncImage(url: document.originalURL) { image in
-                                    image
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                } placeholder: {
-                                    ProgressView()
-                                }
-                            } else if let processedImage = document.processedImage {
-                                Image(nsImage: processedImage)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                            }
-                        } else {
-                            AsyncImage(url: document.originalURL) { image in
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            .overlay(
-                                document.processingStatus == .processing ?
-                                ProcessingOverlay(progress: document.processingProgress) : nil
-                            )
-                        }
-                    }
+                    DocumentImageView(
+                        document: document,
+                        showingOriginal: showingOriginal
+                    )
                     .scaleEffect(zoomScale)
                     .frame(minWidth: geometry.size.width, minHeight: geometry.size.height)
                 }
@@ -522,6 +509,72 @@ struct DocumentComparisonView: View {
 }
 
 // MARK: - 处理中覆盖层
+
+struct DocumentImageView: View {
+    let document: DocumentItem
+    let showingOriginal: Bool
+    
+    var body: some View {
+        Group {
+            if document.processingStatus == .completed {
+                CompletedDocumentImageView(document: document, showingOriginal: showingOriginal)
+            } else {
+                ProcessingDocumentImageView(document: document)
+            }
+        }
+    }
+}
+
+struct CompletedDocumentImageView: View {
+    let document: DocumentItem
+    let showingOriginal: Bool
+    
+    var body: some View {
+        Group {
+            if showingOriginal {
+                OriginalImageView(url: document.originalURL)
+            } else if let processedImage = document.processedImage {
+                Image(nsImage: processedImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
+        }
+    }
+}
+
+struct ProcessingDocumentImageView: View {
+    let document: DocumentItem
+    
+    var body: some View {
+        OriginalImageView(url: document.originalURL)
+            .overlay {
+                if document.processingStatus == .processing {
+                    ProcessingOverlay(progress: document.processingProgress)
+                }
+            }
+    }
+}
+
+struct OriginalImageView: View {
+    let url: URL
+    
+    var body: some View {
+        Group {
+            if let nsImage = NSImage(contentsOf: url) {
+                Image(nsImage: nsImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            } else {
+                Rectangle()
+                    .fill(.quaternary)
+                    .overlay {
+                        Image(systemName: "photo")
+                            .foregroundStyle(.secondary)
+                    }
+            }
+        }
+    }
+}
 
 struct ProcessingOverlay: View {
     let progress: Double

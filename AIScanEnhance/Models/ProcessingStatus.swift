@@ -2,37 +2,37 @@
 //  ProcessingStatus.swift
 //  AIScanEnhance
 //
-//  Created by AI Assistant on 2024-01-20.
+//  文档处理状态枚举
 //
 
 import Foundation
 import SwiftUI
 
-/// 文档处理状态枚举
 enum ProcessingStatus: String, CaseIterable, Codable {
     case pending = "pending"
     case processing = "processing"
     case completed = "completed"
     case failed = "failed"
     case cancelled = "cancelled"
+    case reviewing = "reviewing"
     
-    /// 状态显示名称
     var displayName: String {
         switch self {
         case .pending:
             return "等待处理"
         case .processing:
-            return "正在处理"
+            return "处理中"
         case .completed:
-            return "处理完成"
+            return "已完成"
         case .failed:
             return "处理失败"
         case .cancelled:
             return "已取消"
+        case .reviewing:
+            return "审核中"
         }
     }
     
-    /// 状态图标
     var iconName: String {
         switch self {
         case .pending:
@@ -40,15 +40,16 @@ enum ProcessingStatus: String, CaseIterable, Codable {
         case .processing:
             return "gear"
         case .completed:
-            return "checkmark.circle.fill"
+            return "checkmark.circle"
         case .failed:
-            return "xmark.circle.fill"
+            return "xmark.circle"
         case .cancelled:
-            return "stop.circle.fill"
+            return "stop.circle"
+        case .reviewing:
+            return "eye.circle"
         }
     }
     
-    /// 状态颜色
     var color: Color {
         switch self {
         case .pending:
@@ -61,49 +62,20 @@ enum ProcessingStatus: String, CaseIterable, Codable {
             return .red
         case .cancelled:
             return .gray
+        case .reviewing:
+            return .purple
         }
     }
     
-    /// 是否为最终状态
-    var isFinalState: Bool {
-        switch self {
-        case .completed, .failed, .cancelled:
-            return true
-        case .pending, .processing:
-            return false
-        }
+    var isCompleted: Bool {
+        return self == .completed
     }
     
-    /// 是否可以重试
-    var canRetry: Bool {
-        switch self {
-        case .failed, .cancelled:
-            return true
-        case .pending, .processing, .completed:
-            return false
-        }
-    }
-}
-
-/// 处理状态扩展 - 用于动画和UI
-extension ProcessingStatus {
-    /// 获取状态对应的SF Symbol动画
-    var animatedIcon: String {
-        switch self {
-        case .processing:
-            return "gear.badge.questionmark"
-        default:
-            return iconName
-        }
+    var isFailed: Bool {
+        return self == .failed
     }
     
-    /// 状态变化动画持续时间
-    var animationDuration: Double {
-        switch self {
-        case .processing:
-            return 1.0
-        default:
-            return 0.3
-        }
+    var isProcessing: Bool {
+        return self == .processing
     }
 }

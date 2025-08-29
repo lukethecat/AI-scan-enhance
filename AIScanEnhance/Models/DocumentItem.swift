@@ -2,65 +2,103 @@
 //  DocumentItem.swift
 //  AIScanEnhance
 //
-//  Created by AI Assistant on 2024-01-20.
+//  文档项目数据模型
 //
 
 import Foundation
+import AppKit
+import Vision
 import SwiftUI
 
-/// 文档项数据模型
-struct DocumentItem: Identifiable, Codable {
+struct DocumentItem: Identifiable, Codable, Hashable {
     let id = UUID()
     let originalURL: URL
     let fileName: String
     var processingStatus: ProcessingStatus = .pending
-    var processedURL: URL?
-    var thumbnailData: Data?
-    var createdAt: Date = Date()
-    var processedAt: Date?
-    var fileSize: Int64 = 0
-    var imageSize: CGSize = .zero
     var processingProgress: Double = 0.0
     var errorMessage: String?
+    var processedImagePath: String?
     
-    /// 初始化文档项
+    // 非持久化属性 - 用于运行时图像处理
+    var originalImage: NSImage?
+    var processedImage: NSImage?
+    var detectedCorners: [CGPoint]?
+    
     init(url: URL) {
         self.originalURL = url
         self.fileName = url.lastPathComponent
+    }
+    
+    // MARK: - Codable Implementation
+    enum CodingKeys: String, CodingKey {
+        case originalURL
+        case fileName
+        case processingStatus
+        case processingProgress
+        case errorMessage
+        case processedImagePath
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        originalURL = try container.decode(URL.self, forKey: .originalURL)
+        fileName = try container.decode(String.self, forKey: .fileName)
+        processingStatus = try container.decode(ProcessingStatus.self, forKey: .processingStatus)
+        processingProgress = try container.decode(Double.self, forKey: .processingProgress)
+        errorMessage = try container.decodeIfPresent(String.self, forKey: .errorMessage)
+        processedImagePath = try container.decodeIfPresent(String.self, forKey: .processedImagePath)
         
-        // 获取文件大小
-        if let attributes = try? FileManager.default.attributesOfItem(atPath: url.path),
-           let size = attributes[.size] as? Int64 {
-            self.fileSize = size
-        }
+        // 非持久化属性设为默认值
+        originalImage = nil
+        processedImage = nil
+        detectedCorners = nil
     }
     
-    /// 格式化文件大小
-    var formattedFileSize: String {
-        ByteCountFormatter.string(fromByteCount: fileSize, countStyle: .file)
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(originalURL, forKey: .originalURL)
+        try container.encode(fileName, forKey: .fileName)
+        try container.encode(processingStatus, forKey: .processingStatus)
+        try container.encode(processingProgress, forKey: .processingProgress)
+        try container.encodeIfPresent(errorMessage, forKey: .errorMessage)
+        try container.encodeIfPresent(processedImagePath, forKey: .processedImagePath)
+        // 不编码非持久化属性
     }
     
-    /// 是否处理完成
-    var isCompleted: Bool {
-        processingStatus == .completed
+    // MARK: - Hashable Implementation
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(originalURL)
+        hasher.combine(fileName)
+        hasher.combine(processingStatus)
     }
     
-    /// 是否处理失败
-    var isFailed: Bool {
-        processingStatus == .failed
+    static func == (lhs: DocumentItem, rhs: DocumentItem) -> Bool {
+        return lhs.id == rhs.id &&
+               lhs.originalURL == rhs.originalURL &&
+               lhs.fileName == rhs.fileName &&
+               lhs.processingStatus == rhs.processingStatus
     }
     
-    /// 是否正在处理
-    var isProcessing: Bool {
-        processingStatus == .processing
+    // MARK: - Helper Methods
+    mutating func updateProgress(_ progress: Double) {
+        self.processingProgress = min(max(progress, 0.0), 1.0)
     }
-}
-
-/// 文档项扩展 - 用于预览和测试
-extension DocumentItem {
-    static let sampleData: [DocumentItem] = [
-        DocumentItem(url: URL(fileURLWithPath: "/Users/sample/document1.jpg")),
-        DocumentItem(url: URL(fileURLWithPath: "/Users/sample/document2.png")),
-        DocumentItem(url: URL(fileURLWithPath: "/Users/sample/document3.pdf"))
-    ]
+    
+    mutating func setError(_ message: String) {
+        self.errorMessage = message
+        self.processingStatus = .failed
+    }
+    
+    mutating func clearError() {
+        self.errorMessage = nil
+    }
+    
+    var hasError: Bool {
+        return errorMessage != nil
+    }
+    
+    var isProcessingComplete: Bool {
+        return processingStatus == .completed
+    }
 }

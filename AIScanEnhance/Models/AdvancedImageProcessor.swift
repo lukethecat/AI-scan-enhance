@@ -127,7 +127,7 @@ class AdvancedImageProcessor {
         let targetSize = calculateOptimalTargetSize(from: corners)
         
         // 定义目标矩形的四个角点
-        let targetCorners = [
+        let _ = [
             CGPoint(x: 0, y: 0), // 左上
             CGPoint(x: targetSize.width, y: 0), // 右上
             CGPoint(x: targetSize.width, y: targetSize.height), // 右下

@@ -11,41 +11,7 @@ import CoreImage
 import CoreImage.CIFilterBuiltins
 import UniformTypeIdentifiers
 import PDFKit
-
-// MARK: - 文档项目模型
-struct DocumentItem: Identifiable, Hashable {
-    let id = UUID()
-    let originalURL: URL
-    let fileName: String
-    var originalImage: NSImage?
-    var processedImage: NSImage?
-    var processingStatus: ProcessingStatus = .pending
-    var processingProgress: Double = 0.0
-    var detectedCorners: [CGPoint] = []
-    var errorMessage: String?
-    
-    init(url: URL) {
-        self.originalURL = url
-        self.fileName = url.lastPathComponent
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    static func == (lhs: DocumentItem, rhs: DocumentItem) -> Bool {
-        lhs.id == rhs.id
-    }
-}
-
-// MARK: - 处理状态
-enum ProcessingStatus {
-    case pending
-    case processing
-    case completed
-    case failed
-    case reviewing
-}
+import CoreSpotlight
 
 // MARK: - 文档处理器
 @MainActor
@@ -187,7 +153,7 @@ class DocumentProcessor: ObservableObject {
         documents[index].processingProgress = 0.0
         
         do {
-            let cornersToUse = corners ?? documents[index].detectedCorners
+            let cornersToUse = corners ?? documents[index].detectedCorners ?? []
             
             let correctedImageData = try await imageProcessor.correctPerspective(
                 imageURL: document.originalURL,
