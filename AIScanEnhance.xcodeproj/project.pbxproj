@@ -10,16 +10,9 @@
 		1A2B3C4D5E6F7890ABCD1234 /* AIScanEnhanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1235 /* AIScanEnhanceApp.swift */; };
 		1A2B3C4D5E6F7890ABCD1236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1237 /* ContentView.swift */; };
 		1A2B3C4D5E6F7890ABCD1263 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1264 /* PrivacyInfo.xcprivacy */; };
-		1A2B3C4D5E6F7890ABCD1238 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */; };
-		1A2B3C4D5E6F7890ABCD123A /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */; };
-		1A2B3C4D5E6F7890ABCD123C /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */; };
-		1A2B3C4D5E6F7890ABCD123E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */; };
-
-		1A2B3C4D5E6F7890ABCD1261 /* SwiftDocumentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */; };
-		1A2B3C4D5E6F7890ABCD1259 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */; };
-		1A2B3C4D5E6F7890ABCD125B /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */; };
-		1A2B3C4D5E6F7890ABCD125D /* CurrentProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */; };
-		1A2B3C4D5E6F7890ABCD125F /* RefinementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */; };
+		1A2B3C4D5E6F7890ABCD1265 /* DocumentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1266 /* DocumentProcessor.swift */; };
+		1A2B3C4D5E6F7890ABCD1267 /* AdvancedImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1268 /* AdvancedImageProcessor.swift */; };
+		1A2B3C4D5E6F7890ABCD1269 /* SpotlightIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1270 /* SpotlightIndexer.swift */; };
 		1A2B3C4D5E6F7890ABCD1242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCD1243 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -28,16 +21,9 @@
 		1A2B3C4D5E6F7890ABCD1235 /* AIScanEnhanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIScanEnhanceApp.swift; sourceTree = "<group>"; };
 		1A2B3C4D5E6F7890ABCD1264 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1A2B3C4D5E6F7890ABCD1237 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
-
-		1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocumentProcessor.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProcessingView.swift; sourceTree = "<group>"; };
-		1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefinementView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1266 /* DocumentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentProcessor.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1268 /* AdvancedImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedImageProcessor.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCD1270 /* SpotlightIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightIndexer.swift; sourceTree = "<group>"; };
 		1A2B3C4D5E6F7890ABCD1243 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A2B3C4D5E6F7890ABCD1245 /* AIScanEnhance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIScanEnhance.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,12 +73,6 @@
 		1A2B3C4D5E6F7890ABCD124B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD1239 /* DropZoneView.swift */,
-				1A2B3C4D5E6F7890ABCD123B /* ImagePreviewView.swift */,
-				1A2B3C4D5E6F7890ABCD123D /* CalibrationView.swift */,
-				1A2B3C4D5E6F7890ABCD125C /* QueueView.swift */,
-				1A2B3C4D5E6F7890ABCD125E /* CurrentProcessingView.swift */,
-				1A2B3C4D5E6F7890ABCD1260 /* RefinementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,8 +80,8 @@
 		1A2B3C4D5E6F7890ABCD124C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B3C4D5E6F7890ABCD123F /* ImageProcessor.swift */,
-				1A2B3C4D5E6F7890ABCD125A /* QueueManager.swift */,
+				1A2B3C4D5E6F7890ABCD1266 /* DocumentProcessor.swift */,
+				1A2B3C4D5E6F7890ABCD1268 /* AdvancedImageProcessor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,8 +89,7 @@
 		1A2B3C4D5E6F7890ABCD124D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-
-				1A2B3C4D5E6F7890ABCD1262 /* SwiftDocumentProcessor.swift */,
+				1A2B3C4D5E6F7890ABCD1270 /* SpotlightIndexer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -202,19 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-					1A2B3C4D5E6F7890ABCD1236 /* ContentView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1236 /* ContentView.swift in Sources */,
 				1A2B3C4D5E6F7890ABCD1234 /* AIScanEnhanceApp.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD1238 /* DropZoneView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD123A /* ImagePreviewView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD123C /* CalibrationView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD123E /* ImageProcessor.swift in Sources */,
-
-				1A2B3C4D5E6F7890ABCD1261 /* SwiftDocumentProcessor.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD1259 /* QueueManager.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD125B /* QueueView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD125D /* CurrentProcessingView.swift in Sources */,
-				1A2B3C4D5E6F7890ABCD125F /* RefinementView.swift in Sources */,
-				);
+				1A2B3C4D5E6F7890ABCD1265 /* DocumentProcessor.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1267 /* AdvancedImageProcessor.swift in Sources */,
+				1A2B3C4D5E6F7890ABCD1269 /* SpotlightIndexer.swift in Sources */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
@@ -350,8 +322,52 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI Scan Enhance";
+				INFOPLIST_KEY_CFBundleDocumentTypes = (
+					{
+						CFBundleTypeExtensions = (
+							jpg,
+							jpeg,
+							png,
+							tiff,
+							tif,
+							bmp,
+							gif,
+							heic,
+							heif,
+						);
+						CFBundleTypeIconFile = "";
+						CFBundleTypeName = "Image";
+						CFBundleTypeRole = Editor;
+						LSHandlerRank = Default;
+						LSTypeIsPackage = NO;
+					},
+					{
+						CFBundleTypeExtensions = (
+							pdf,
+						);
+						CFBundleTypeIconFile = "";
+						CFBundleTypeName = "PDF Document";
+						CFBundleTypeRole = Viewer;
+						LSHandlerRank = Default;
+						LSTypeIsPackage = NO;
+					},
+				);
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UTExportedTypeDeclarations = (
+					{
+						UTTypeConformsTo = (
+							"public.image",
+						);
+						UTTypeDescription = "Enhanced Scanned Document";
+						UTTypeIdentifier = "com.aiscanenhance.enhanced-document";
+						UTTypeTagSpecification = {
+							"public.filename-extension" = (
+								"aised",
+							);
+						};
+					},
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -380,8 +396,52 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "AI Scan Enhance";
+				INFOPLIST_KEY_CFBundleDocumentTypes = (
+					{
+						CFBundleTypeExtensions = (
+							jpg,
+							jpeg,
+							png,
+							tiff,
+							tif,
+							bmp,
+							gif,
+							heic,
+							heif,
+						);
+						CFBundleTypeIconFile = "";
+						CFBundleTypeName = "Image";
+						CFBundleTypeRole = Editor;
+						LSHandlerRank = Default;
+						LSTypeIsPackage = NO;
+					},
+					{
+						CFBundleTypeExtensions = (
+							pdf,
+						);
+						CFBundleTypeIconFile = "";
+						CFBundleTypeName = "PDF Document";
+						CFBundleTypeRole = Viewer;
+						LSHandlerRank = Default;
+						LSTypeIsPackage = NO;
+					},
+				);
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UTExportedTypeDeclarations = (
+					{
+						UTTypeConformsTo = (
+							"public.image",
+						);
+						UTTypeDescription = "Enhanced Scanned Document";
+						UTTypeIdentifier = "com.aiscanenhance.enhanced-document";
+						UTTypeTagSpecification = {
+							"public.filename-extension" = (
+								"aised",
+							);
+						};
+					},
+				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
